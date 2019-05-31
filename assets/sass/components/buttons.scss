@@ -1,0 +1,22 @@
+.nickel-button {
+    background-color: $nickel;
+    border: none;
+    border-radius: 30px;
+    color: $white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: $small;
+    text-decoration: none;
+    display: inline-block;
+    font-size: $medium;
+
+    &:hover {
+        background-color: $platinum;
+    }
+
+    &:focus {
+        border-block-end-color: $platinum;
+    }
+  
+}
+
