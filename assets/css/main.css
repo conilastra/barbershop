@@ -9656,8 +9656,8 @@ h3 {
   }
 }
 body {
-  background-color: #121619;
-  color: #fff;
+  background-color: #fff;
+  color: #6C6E70;
 }
 
 .roboto {
@@ -9667,7 +9667,23 @@ body {
   color: #6C6E70;
 }
 
-.main-section__title {
+.nav {
+  background-color: #121619;
+}
+.nav .nav__logo {
+  max-width: 5rem;
+}
+
+.intro-section {
+  text-align: center;
+  background-image: url("../img/post-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+  display: grid;
+}
+.intro-section .intro-section__title {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: italic;
@@ -9676,17 +9692,24 @@ body {
   margin: auto;
 }
 
-.navigation {
-  color: #fff;
+.blog-entry {
+  background-color: #fff;
+  color: #6C6E70;
 }
-.main-section {
-  text-align: center;
-  background-image: url("../img/post-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
-  height: 100vh;
-  display: grid;
+
+.author-section .author-section__img {
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+.footer {
+  background-color: #121619;
+  padding: 3em;
+}
+.footer .footer__logo {
+  max-width: 100px;
+  display: block;
+  margin: auto;
 }
 
 .nickel-button {

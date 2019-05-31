@@ -1,0 +1,20 @@
+.intro-section {
+    text-align: center;
+    background-image: url('../img/post-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    height: 100vh;
+    display: grid;
+
+    .intro-section__title {
+        font-family: $playfair;
+        font-weight: 900;
+        font-style: italic;
+        font-size: $xx-large;
+        color: $white;
+        margin: auto;
+    }
+
+}
+
