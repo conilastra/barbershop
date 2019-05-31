@@ -1,6 +1,17 @@
-.author-section {
-    .author-section__img {
-        border-radius: 50%;
-        max-width: 100px;
+.author {
+    padding: 3rem 0;
+
+    .author__info {
+
+        .author__info__img {
+            display: inline-block;
+            border-radius: 50%;
+            width: 120px;
+            margin: auto;
+        }
+    
+        .author__info__text {
+            display: inline-block;
+        }
     }
 }

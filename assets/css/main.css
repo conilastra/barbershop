@@ -9697,9 +9697,17 @@ body {
   color: #6C6E70;
 }
 
-.author-section .author-section__img {
+.author {
+  padding: 3rem 0;
+}
+.author .author__info .author__info__img {
+  display: inline-block;
   border-radius: 50%;
-  max-width: 100px;
+  width: 120px;
+  margin: auto;
+}
+.author .author__info .author__info__text {
+  display: inline-block;
 }
 
 .footer {
