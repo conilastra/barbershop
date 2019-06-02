@@ -5,13 +5,16 @@ body {
     p {
         font-family: $roboto;
         font-weight: 300;
-        color: $nickel;
         line-height: 1.8;
         padding: 1em 0;
     }
 
     h1 {
         font-size: $xx-large;
+    }
+
+    i {
+        color: $white;
     }
 }
 

@@ -1,5 +1,9 @@
-.nav {
+.navigation {
     background-color: $eerie-black; 
+    
+    i {
+        color: $white;
+    }
 
     .nav__logo {
         max-width: 5rem;
@@ -7,12 +11,21 @@
 } 
 
 .navbar-dark .navbar-nav .nav-link {
-    color: $white;
     font-weight: 300;
+
+    &:not(.disabled) {
+        &:hover, &:focus {
+          color: $ruddy-pink; 
+        }
+
+        &:active {
+            color: $white;
+        }
+    }
+    
 }
 
-.fa.fa-navicon {
-    color: $white;
-  }
+
+
 
 

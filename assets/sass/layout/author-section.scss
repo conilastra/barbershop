@@ -5,46 +5,43 @@
 
    
 
-    .author__img {
+    &__img {
         display: inline-block;
         border-radius: 50%;
-        max-width: 200px; 
+        max-width: 150px; 
         margin: auto 0;
         
     }
 
-    .author__info {
+    &__info {
         display: inline-block;
-        margin: 0;
-        padding: 1em 3em;
+        margin: 0 auto;
+        padding: 2em 3em;
         line-height: 1.7;
         
 
-        .author__info__name {
+        &__name {
             font-family: $playfair;
             font-style: italic;
             font-size: $x-large;
             font-weight: 900;
         }
     
-        .author__info__rrss {
+        &__rrss {
             color: $spanish-pink;
             font-weight: 300;
-        
-            .author__info__rrss--hover {
-                &:hover {
+
+            &--hover:hover {
                 color: $eerie-black;
                 }
-            }
-        
-            .author__info__rrss--active {
-                color: $platinum;
-            }
-        }
 
+            &--active:active {
+                color: $platinum;
+                }
+        }
     }
         
-    .author__bio {
+    &__bio {
         display: inline;
         padding: 0;
         margin: auto;
