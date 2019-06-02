@@ -1,17 +1,47 @@
 .author {
-    padding: 3rem 0;
+    padding: 1em;
+    border-style: solid;
+    border-top: 2px solid $platinum;
 
-    .author__info {
+   
 
-        .author__info__img {
-            display: inline-block;
-            border-radius: 50%;
-            width: 120px;
-            margin: auto;
+    .author__info__img {
+        display: inline-block;
+        border-radius: 50%;
+        width: 200px; 
+        margin: auto 0;
+        
+    }
+
+    .author__info__text {
+        display: inline-block;
+        margin: 3em 0;
+        padding: 1em 3em;
+        
+
+        .author__info__name {
+            font-family: $playfair;
+            font-style: italic;
+            font-size: $x-large;
+            font-weight: 900;
         }
     
-        .author__info__text {
-            display: inline-block;
-        }
     }
+        
+    .author__bio {
+        display: inline;
+        padding: 0;
+        margin: auto;
+    }
+
 }
+
+
+@media (max-width: 767px) {
+    
+    .author {
+            text-align: center;
+          
+    }
+  
+  }

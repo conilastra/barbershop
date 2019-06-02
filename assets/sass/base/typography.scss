@@ -1,7 +1,23 @@
-.roboto {
-    font-family: $roboto;
-    font-size: $medium;
-    font-weight: 400;
+p {
     color: $nickel;
+    font-size: $medium;
+    font-family: $roboto;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $playfair;
+}
+
+a {
+    color: $spanish-pink;
+    font-weight: 300;
+
+    &:hover {
+        color: $eerie-black;
+    }
+
+    &:active {
+        color: $platinum;
+    }
 }
 

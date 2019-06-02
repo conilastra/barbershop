@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Barbershop - Blog</title>
 
-    <link rel="stylesheet" href="assets/css/main.css">
+
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900i|Roboto:300,400&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
@@ -45,14 +47,16 @@
         </nav>
 
         <section class="intro-section">
-            <h1 class="intro-section__title">5 formas de cuidar<br>tu corte de cabello</h1>
+            <div class="container"></div>
+            <h1 class="intro-section__title">5 formas de cuidar tu corte de cabello</h1>
+            <i class="fas fa-angle-double-down fa-2x"></i>
         </section>
     </header>
 
     <section class="blog-entry">
         <div class="container">
-            <article>
-                <p>12 de abril de 2018</p>
+            <article class="container">
+                <p class="blog-entry__date">12 de abril de 2018</p>
                 <p>Un punto realmente importante y uno de los errores al usar la plancha que debes evitar. Si nos
                     acabamos
                     de cortar el pelo y queremos que su buen aspecto dure mucho tiempo, debemos empezar sus cuidados
@@ -97,7 +101,7 @@
                     características.</p>
             </article>
 
-            <div>
+            <div class="blog-entry__buttons">
                 <button class="nickel-button">Compartir</button>
                 <button class="nickel-button">Comentar en Twitter</button>
             </div>
@@ -106,20 +110,19 @@
 
     <section class="author">
         <div class="container">
-            <div class="row">
-                <div class="col col-md-4 author__info">
-                    <img class="author__info__img" src="../barbershop/assets/img/naomi-thai.png" alt="">
-            
-                <div class="author__info__text col-6 col-md-2">
+            <div class="row no-gutters align-items-center">
+                <div class="col-12 col-md-3">
+                    <img class="author__info__img" src="../barbershop/assets/img/naomi-thai.png" alt="Naomi Thai">
+                </div>
+                <div class="col-12 col-md-3 author__info__text">
                     <h5 class="author__info__name">Naomi Thai</h5>
-                    <p class="author__info__rrss">@Naothai <br>depelos.com</p>
+                    <a class="author__info__rrss" href="http://instagram/naothai">@Naothai</a>
+                    <a class="author__info__rrss" href="http://www.depelos.com">depelos.com</a>
                 </div>
 
 
-
-
-                <div class="col-8 d-none d-md-block author__info__bio">
-                    <p>ella es una chica light
+                <div class="col-6 d-none d-md-block author__bio">
+                    <p>Ella es una chica light
                         tiene un tatuaje en el pie y buena familia
                         tiene un novio espacial
                         dice que lo ama pero
@@ -129,7 +132,21 @@
         </div>
     </section>
 
-    <!-- pagination -->
+    <nav aria-label="...">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled page-indicator">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item page-indicator">
+                <a class="page-link" href="#">Siguiente</a>
+            </li>
+        </ul>
+    </nav>
 
     <footer class="footer">
         <img class="footer__logo" src="assets/img/logo.png" alt="">

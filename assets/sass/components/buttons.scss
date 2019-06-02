@@ -9,6 +9,9 @@
     text-decoration: none;
     display: inline-block;
     font-size: $medium;
+    font-weight: 300;
+    margin: 2em 0;
+
 
     &:hover {
         background-color: $platinum;

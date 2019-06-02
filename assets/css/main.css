@@ -9655,16 +9655,60 @@ h3 {
     border-color: #dee2e6;
   }
 }
-body {
-  background-color: #fff;
-  color: #6C6E70;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-.roboto {
+body {
+  background-color: #fff;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+}
+body p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   color: #6C6E70;
+  line-height: 1.8;
+  padding: 1em 0;
+}
+body h1 {
+  font-size: 70px;
+}
+
+p {
+  color: #6C6E70;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  color: #ECBCBA;
+  font-weight: 300;
+}
+a:hover {
+  color: #121619;
+}
+a:active {
+  color: #E6E7E7;
 }
 
 .nav {
@@ -9672,6 +9716,11 @@ body {
 }
 .nav .nav__logo {
   max-width: 5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 300;
 }
 
 .intro-section {
@@ -9684,30 +9733,128 @@ body {
   display: grid;
 }
 .intro-section .intro-section__title {
-  font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: italic;
-  font-size: 70px;
   color: #fff;
   margin: auto;
+  text-align: center;
+  line-height: 1.3;
 }
 
+@media (max-width: 768px) {
+  .intro-section__title {
+    width: 80%;
+    font-size: 50px;
+  }
+}
+@media (min-width: 769px) {
+  .intro-section__title {
+    width: 60%;
+  }
+}
 .blog-entry {
   background-color: #fff;
-  color: #6C6E70;
+  padding: 2em 0;
+  text-align: justify;
+}
+.blog-entry .blog-entry__date {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
 }
 
-.author {
-  padding: 3rem 0;
+@media (max-width: 767.98px) {
+  .blog-entry__buttons {
+    display: table;
+    margin: 0 auto;
+  }
+  .blog-entry__buttons .nickel-button {
+    margin-right: 0.5em;
+  }
 }
-.author .author__info .author__info__img {
+.author {
+  padding: 1em;
+  border-style: solid;
+  border-top: 2px solid #E6E7E7;
+}
+.author .author__info__img {
   display: inline-block;
   border-radius: 50%;
-  width: 120px;
+  width: 200px;
+  margin: auto 0;
+}
+.author .author__info__text {
+  display: inline-block;
+  margin: 3em 0;
+  padding: 1em 3em;
+}
+.author .author__info__text .author__info__name {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 900;
+}
+.author .author__bio {
+  display: inline;
+  padding: 0;
   margin: auto;
 }
-.author .author__info .author__info__text {
-  display: inline-block;
+
+@media (max-width: 767px) {
+  .author {
+    text-align: center;
+  }
+}
+.pagination {
+  display: flex;
+  font-weight: 300;
+  background-color: #E6E7E7;
+  padding: 2em;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 0.5em 1em;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #121619;
+  border: 1px solid #dee2e6;
+  border-start-end-radius: 50%;
+}
+.page-link:hover {
+  z-index: 2;
+  color: #D76C69;
+  text-decoration: none;
+  background-color: #E6E7E7;
+  border-color: #dee2e6;
+}
+.page-link:focus {
+  z-index: 2;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.page-item:last-child .page-link {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: #6C6E70;
+  border-color: #6C6E70;
+}
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dee2e6;
 }
 
 .footer {
@@ -9731,6 +9878,8 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: 300;
+  margin: 2em 0;
 }
 .nickel-button:hover {
   background-color: #E6E7E7;
