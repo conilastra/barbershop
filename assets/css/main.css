@@ -9700,17 +9700,6 @@ h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", serif;
 }
 
-a {
-  color: #ECBCBA;
-  font-weight: 300;
-}
-a:hover {
-  color: #121619;
-}
-a:active {
-  color: #E6E7E7;
-}
-
 .nav {
   background-color: #121619;
 }
@@ -9721,6 +9710,10 @@ a:active {
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
   font-weight: 300;
+}
+
+.fa.fa-navicon {
+  color: #fff;
 }
 
 .intro-section {
@@ -9776,22 +9769,33 @@ a:active {
   border-style: solid;
   border-top: 2px solid #E6E7E7;
 }
-.author .author__info__img {
+.author .author__img {
   display: inline-block;
   border-radius: 50%;
-  width: 200px;
+  max-width: 200px;
   margin: auto 0;
 }
-.author .author__info__text {
+.author .author__info {
   display: inline-block;
-  margin: 3em 0;
+  margin: 0;
   padding: 1em 3em;
+  line-height: 1.7;
 }
-.author .author__info__text .author__info__name {
+.author .author__info .author__info__name {
   font-family: "Playfair Display", serif;
   font-style: italic;
   font-size: 30px;
   font-weight: 900;
+}
+.author .author__info .author__info__rrss {
+  color: #ECBCBA;
+  font-weight: 300;
+}
+.author .author__info .author__info__rrss .author__info__rrss--hover:hover {
+  color: #121619;
+}
+.author .author__info .author__info__rrss .author__info__rrss--active {
+  color: #E6E7E7;
 }
 .author .author__bio {
   display: inline;
@@ -9857,6 +9861,14 @@ a:active {
   border-color: #dee2e6;
 }
 
+@media (max-width: 767px) {
+  .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #121619;
+    border-color: #121619;
+  }
+}
 .footer {
   background-color: #121619;
   padding: 3em;

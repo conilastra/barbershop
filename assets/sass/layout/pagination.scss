@@ -66,3 +66,17 @@
       border-color: $pagination-disabled-border-color;
     }
   }
+
+  @media (max-width: 767px) {
+    
+      .page-item {
+        &.active .page-link {
+          z-index: 1;
+          color: $pagination-active-color;
+          background-color: $eerie-black;
+          border-color: $eerie-black;
+        
+      }
+
+    }
+  }

@@ -5,18 +5,19 @@
 
    
 
-    .author__info__img {
+    .author__img {
         display: inline-block;
         border-radius: 50%;
-        width: 200px; 
+        max-width: 200px; 
         margin: auto 0;
         
     }
 
-    .author__info__text {
+    .author__info {
         display: inline-block;
-        margin: 3em 0;
+        margin: 0;
         padding: 1em 3em;
+        line-height: 1.7;
         
 
         .author__info__name {
@@ -26,6 +27,21 @@
             font-weight: 900;
         }
     
+        .author__info__rrss {
+            color: $spanish-pink;
+            font-weight: 300;
+        
+            .author__info__rrss--hover {
+                &:hover {
+                color: $eerie-black;
+                }
+            }
+        
+            .author__info__rrss--active {
+                color: $platinum;
+            }
+        }
+
     }
         
     .author__bio {
@@ -40,7 +56,7 @@
 @media (max-width: 767px) {
     
     .author {
-            text-align: center;
+        text-align: center;
           
     }
   
