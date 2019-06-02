@@ -9678,6 +9678,7 @@ time, mark, audio, video {
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
+  max-width: 100vw;
 }
 body p {
   font-family: "Roboto", sans-serif;
@@ -9688,8 +9689,14 @@ body p {
 body h1 {
   font-size: 70px;
 }
-body i {
-  color: #fff;
+body a {
+  color: #D76C69;
+}
+body a:hover {
+  color: #121619;
+}
+body a:active {
+  color: #E6E7E7;
 }
 
 p {
@@ -9704,6 +9711,7 @@ h1, h2, h3, h4, h5 {
 
 .navigation {
   background-color: #121619;
+  width: 100vw;
 }
 .navigation i {
   color: #fff;
@@ -9753,25 +9761,23 @@ h1, h2, h3, h4, h5 {
 }
 .blog-entry {
   background-color: #fff;
-  padding: 2em 0;
   text-align: justify;
+  max-width: 100vw;
+  padding: 2rem 0;
 }
-.blog-entry .blog-entry__date {
+.blog-entry__date {
   font-family: "Playfair Display", serif;
   font-weight: 400;
 }
-
-@media (max-width: 767.98px) {
-  .blog-entry__buttons {
-    display: table;
-    margin: 0 auto;
-  }
-  .blog-entry__buttons .nickel-button {
-    margin-right: 0.5em;
+@media (max-width: 768px) {
+  .blog-entry--center-buttons {
+    display: flex;
+    justify-content: center;
   }
 }
+
 .author {
-  padding: 1em;
+  padding: 3em 1em;
   border-style: solid;
   border-top: 2px solid #E6E7E7;
 }
@@ -9897,13 +9903,18 @@ h1, h2, h3, h4, h5 {
   display: inline-block;
   font-size: 16px;
   font-weight: 300;
-  margin: 2em 0;
+  margin: 0.5em;
 }
 .nickel-button:hover {
   background-color: #E6E7E7;
 }
 .nickel-button:focus {
   border-block-end-color: #E6E7E7;
+}
+@media (max-width: 768px) {
+  .nickel-button {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

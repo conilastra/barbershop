@@ -1,24 +1,20 @@
 .blog-entry {
     background-color: $white;
-    padding: 2em 0;
     text-align: justify;
+    max-width: 100vw;
+    padding: 2rem 0;
 
-    .blog-entry__date {
+    &__date {
         font-family: $playfair;
         font-weight: 400;
     }
-}
 
-@media (max-width: 767.98px) {
-   
-    .blog-entry__buttons {
-        display: table;
-        margin: 0 auto;
-
-       .nickel-button {
-           margin-right: 0.5em;
-       } 
-    }  
+    @media (max-width: 768px) {
+        &--center-buttons {
+            display: flex; 
+            justify-content: center;
+          }
+        }
 }
 
 
